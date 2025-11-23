@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+
+/* App background and text */
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  color: #2c3e50;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #0077b6;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #0077b6 0%, #00b4d8 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.5rem;
+  font-weight: bold;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.navbar-nav .nav-link {
+  color: #caf0f8 !important;
+  margin-right: 1rem;
+}
+.navbar-nav .nav-link.active {
+  color: #ffd166 !important;
 }
 
-.App-link {
-  color: #61dafb;
+/* Tables */
+.table {
+  background: #f1f8ff;
+  color: #22223b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table-dark th {
+  background: #0077b6 !important;
+  color: #fff !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #00b4d8 0%, #0077b6 100%);
+  border: none;
+  color: #fff;
+}
+.btn-success {
+  background: linear-gradient(90deg, #43ea7f 0%, #1fa463 100%);
+  border: none;
+  color: #fff;
+}
+.btn-secondary {
+  background: #adb5bd;
+  color: #fff;
+}
+.btn-link {
+  color: #0077b6;
+  text-decoration: underline;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.card-title {
+  color: #0077b6;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 12px;
+}
+.modal-header {
+  background: #0077b6;
+  color: #fff;
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+
+/* Links */
+a {
+  color: #0077b6;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #00b4d8;
+}
+
+/* Octofit logo left align */
+.octofit-logo {
+  height: 40px;
+  margin-right: 12px;
+  vertical-align: middle;
 }
