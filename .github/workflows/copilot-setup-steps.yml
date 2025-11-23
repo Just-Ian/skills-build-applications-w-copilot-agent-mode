@@ -1,0 +1,23 @@
+name: Copilot Setup Steps
+
+on:
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Show workspace structure
+        run: |
+          tree -a -L 3
+      - name: Print README
+        run: |
+          cat README.md || echo "No README.md found"
+      - name: Print docs/octofit_story.md
+        run: |
+          cat docs/octofit_story.md || echo "No octofit_story.md found"
+      - name: List all files
+        run: |
+          find . -type f | sort
